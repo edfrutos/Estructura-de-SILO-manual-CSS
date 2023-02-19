@@ -1,0 +1,46 @@
+
+#code-window {
+  width: 80%;
+  height: fit-content;
+  align-items: left;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  margin-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+#code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#code-input {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+#copy-btn {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#copy-btn svg {
+  margin-right: 10px;
+  color: white;
+}

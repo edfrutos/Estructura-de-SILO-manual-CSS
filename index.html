@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura SILO para manual CSS</title>
+    <!--<link rel="stylesheet" href="./styles.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js"></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./___Fragmento_Codigo_Final/fragmentoCodigo.css">
+  <style>
+    
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  li {
+    text-align: justify;
+    /*justificar el texto*/
+    hyphens: auto;
+    /*activar el corte de palabras*/
+    word-wrap: break-word;
+    /*romper las palabras para ajustarlas al ancho*/
+    max-width: 700px;
+    /*definir un ancho máximo para cada línea*/
+}
+p{
+    text-align: justify;
+    /*justificar el texto*/
+    hyphens: auto;
+    /*activar el corte de palabras*/
+    word-wrap: break-word;
+    /*romper las palabras para ajustarlas al ancho*/
+    max-width: 800px;
+    /*definir un ancho máximo para cada línea*/
+}
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+nav ul {
+    list-style-type: none; /* eliminar los puntos de la lista */
+    margin: 0; /* eliminar los márgenes predeterminados */
+    padding: 0; /* eliminar los espacios predeterminados */
+    overflow: hidden; /* ocultar los elementos que sobrepasen el área del menú */
+  }
+  
+  nav li {
+    float: left; /* hacer que los elementos de la lista se alineen en línea */
+  }
+  
+  nav a {
+    display: block; /* hacer que los enlaces ocupen todo el ancho de su elemento padre */
+    margin-left: 70px;
+    padding: 14px 16px; /* añadir espacios alrededor del texto del enlace */
+    text-decoration: none; /* eliminar la decoración predeterminada del enlace */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px; /* establecer un tamaño de fuente para el texto del enlace */
+    font-weight: 600;
+    color: #000; /* establecer un color para el texto del enlace */
+    
+  }
+  
+
+.encabezado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* establecer un tamaño de fuente para el texto del enlace */
+    color: #000; /* establecer un color para el texto del enlace */
+    font-weight: 500;
+}
+#scroll-up-arrow {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#scroll-up-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-10px);
+}
+
+#scroll-up-arrow::before {
+  content: "\2191";
+  font-size: 2em;
+}
+
+  </style>
+</head>
+
+<body>
+ 
+  <header>
+      <h1 class="header">Manual de programación CSS</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fundamentos">Fundamentos</a></li>
+        <li><a href="#designe">Diseño</a></li>
+        <li><a href="#avanzado">Avanzado</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+      </ul>
+    </nav>
+<main>
+  <div id="scroll-up-arrow"></div>
+    <section id="home" class="home">
+            <h1>1. Página principal (Home):</h1>
+            <ul>
+                <li class="encabezado">Contenido general sobre programación CSS y su importancia en el desarrollo web.</li>
+                <p>
+                    El CSS (Cascading Style Sheets, o Hojas de Estilo en Cascada) es un lenguaje utilizado para describir la presentación de documentos escritos en un lenguaje de marcas como HTML o XML. Con CSS, los desarrolladores web pueden separar el contenido de la presentación, lo que facilita la creación de sitios web atractivos y adaptativos que se pueden visualizar en diferentes dispositivos y tamaños de pantalla.
+La programación CSS permite a los desarrolladores aplicar estilos y diseños a los elementos de una página web, como los títulos, párrafos, imágenes y botones. Con CSS, se pueden cambiar cosas como el color, el tamaño, el espacio entre los elementos, el tipo de letra, la alineación, entre otros. Esto permite un mayor control y flexibilidad en la presentación de la información en una página web.
+Además, CSS también permite crear diseños adaptativos, que se adaptan automáticamente al tamaño y orientación de la pantalla del dispositivo en el que se está visualizando el sitio. Esto es especialmente importante en la era actual, donde cada vez más personas acceden a Internet a través de dispositivos móviles.
+En resumen, la programación CSS es esencial para el desarrollo web moderno, ya que permite crear sitios web atractivos y adaptativos que mejoran la experiencia del usuario y ayudan a aumentar el tráfico y la conversión en un sitio.
+                </p>
+
+                <li class="encabezado">Enlaces a las secciones principales del sitio.</li>
+            </ul>
+    </section>
+    <section id="fundamentos" class="fundamentos">
+        <h1>2. Sección 1: Fundamentos de CSS</h1>
+        <ul>
+            <li class="encabezado">Introducción a los conceptos básicos de CSS.</li>
+
+
+            <ol>
+                <p>Los conceptos básicos de CSS incluyen:</p>
+<li><p>Selectores: son las herramientas que nos permiten seleccionar los elementos HTML a los que queremos aplicar estilos. Existen diferentes tipos de selectores, como selectores de etiqueta, selectores de clase y selectores de ID.</p></li><li><p>Propiedades: son las características de los elementos HTML que se pueden modificar con CSS. Algunas propiedades comunes incluyen color, tamaño, alineación, tipo de letra, y márgenes.</p></li><li><p>Valores: son los valores específicos que se asignan a las propiedades para cambiar el aspecto de los elementos seleccionados. Por ejemplo, para cambiar el color de un elemento, se utilizaría la propiedad 'color' y se asignaría un valor en formato hexadecimal, RGB o nombre de color.</p></li><li><p>Reglas de cascada: las reglas de cascada determinan cómo se aplican los estilos cuando hay varias reglas que se aplican a un mismo elemento. Las reglas más específicas tienen prioridad sobre las menos específicas.</p></li><li><p>Box Model: El modelo de caja es una representación visual de cómo se aplican las propiedades de diseño a los elementos HTML. Incluye las propiedades como el ancho, alto, márgenes, bordes y relleno.</p></li><li><p>Display: Es una propiedad de CSS que determina cómo se comporta un elemento en la pantalla. Es importante ya que permite cambiar el comportamiento de los elementos como bloques, líneas y elementos en línea.</p></li>
+En resumen, el CSS nos permite seleccionar elementos HTML específicos, cambiar sus propiedades y asignarles valores para modificar su aspecto. La regla de cascada y el modelo de caja son fundamentales para entender cómo se aplican los estilos y cómo se relacionan entre sí.
+</ol><br>
+
+
+            <li class="encabezado">Explicación de las reglas de cascada y cómo aplicar estilos a elementos HTML.</li>
+            <ol>
+                <p>Las reglas de cascada son las reglas que determinan cómo se aplican los estilos cuando hay varias reglas que se aplican a un mismo elemento. La cascada se refiere al orden en el que se aplican los estilos, y se basa en la especificidad, la importancia y el orden de aparición de las reglas.
+                La especificidad se refiere a cuán específico es un selector al seleccionar un elemento. Por ejemplo, un selector de ID es más específico que un selector de etiqueta, y un selector de clase es más específico que un selector de ID.
+                La importancia se refiere a si una regla ha sido marcada como importante o no. Las reglas marcadas como importantes tienen prioridad sobre las que no lo están.
+                El orden de aparición se refiere al orden en el que las reglas aparecen en el archivo CSS. Las reglas que aparecen después tienen prioridad sobre las que aparecen antes.
+                En resumen, si hay varias reglas que se aplican a un mismo elemento, primero se aplica la regla más específica, luego la más importante, y finalmente la que aparece primero en el archivo CSS.
+                Para aplicar estilos a elementos HTML, se utilizan selectores para seleccionar los elementos deseados, y luego se aplican las propiedades y valores deseados. Por ejemplo, si queremos cambiar el color de fondo de un elemento con la clase "header", usaríamos el siguiente código:
+
+                En este ejemplo, el selector es el de clase (.) y la propiedad es background-color. El valor asignado es blue.
+                Es importante tener en cuenta que las reglas de cascada también se aplican a las reglas CSS escritas dentro de un elemento. Cualquier estilo escrito dentro de un elemento tendrá prioridad sobre cualquier estilo escrito en el archivo CSS.
+                </p></ol>
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+  <div id="code-header">
+    <span>CSS</span>
+    <button id="copy-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+      <span>Copiar código</span>
+    </button>
+  </div>
+  <pre><code id="code-input" class="language-css">
+    <!--Comienzo introducción código entre los script-->
+    <script>
+      .header {
+       background-color: blue;
+      }
+    </script>
+   <!--Final de introducción de código-->
+  </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+            <li class="encabezado">Guía de los selectores y cómo utilizarlos para seleccionar elementos específicos.</li>
+            <ol>
+                <p>Los selectores son las herramientas que se utilizan para seleccionar elementos HTML específicos a los que se quieren aplicar estilos. Hay varios tipos de selectores, cada uno con su propia sintaxis y usos específicos. Los selectores más comunes son:</p>
+                <li>Selectores de etiqueta: se utilizan para seleccionar elementos HTML por su etiqueta. Por ejemplo, para seleccionar todos los elementos "p", se utilizaría el siguiente selector: "p".</li>
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+  <div id="code-header">
+    <span>CSS</span>
+    <button id="copy-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+      <span>Copiar código</span>
+    </button>
+  </div>
+  <pre><code id="code-input" class="language-css">
+    <!--Comienzo introducción código entre los script-->
+    <script>
+      p {
+           color: red;
+      }
+    </script>
+   <!--Final de introducción de código-->
+  </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+<li>Selectores de clase: se utilizan para seleccionar elementos HTML que tienen una clase específica. El selector de clase se escribe precedido de un punto (.) y se aplica a una clase específica en el atributo class de un elemento HTML. Por ejemplo, para seleccionar todos los elementos con la clase "header", se utilizaría el siguiente selector: ".header".</li>
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+    <div id="code-header">
+      <span>CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+
+        .header {
+            font-size: 20px;
+        }
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+<li>Selectores de ID: se utilizan para seleccionar elementos HTML que tienen un ID específico. El selector de ID se escribe precedido de una almohadilla (#) y se aplica a un ID específico en el atributo id de un elemento HTML. Es importante notar que cada id debe ser único en una página HTML, y no se recomienda usarlo para seleccionar varios elementos. Por ejemplo, para seleccionar el elemento con el ID "main-title", se utilizaría el siguiente selector: "#main-title".</li>
+
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+    <div id="code-header">
+      <span>CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+        #main-title {
+            text-align: center;
+        }
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+
+<li>Selectores de atributo: se utilizan para seleccionar elementos HTML que tienen un atributo específico o con un valor específico. Por ejemplo, para seleccionar todos los elementos &lt;a&gt; que tienen un atributo "target" con el valor "_blank", se utilizaría el siguiente selector: "a[target='_blank']".</li>
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+    <div id="code-header">
+      <span>CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+        css
+        a[target='_blank'] {
+            text-decoration: none;
+        }
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+<li>Selectores de pseudoclase: se utilizan para seleccionar elementos HTML en un estado específico, como elementos enlazados o elementos que tienen el cursor encima. Por ejemplo, para seleccionar todos los elementos &lt;a&gt; que se encuentran en estado hover, se utilizaría el siguiente selector: "a:hover".</li>
+<!--Fragmento para inserción de código-->
+<div id="code-window">
+    <div id="code-header">
+      <span>CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+
+        a:hover {
+            color: green;
+        }
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+<p>
+En resumen, los selectores son una herramienta esencial en CSS ya que nos permiten seleccionar los elementos HTML específicos a los que queremos aplicar estilos. Cada tipo de selector tiene su propia sintaxis y usos específicos, y pueden ser combinados para seleccionar elementos aún más específicos.
+Al utilizar selectores, es importante tener en cuenta la especificidad de los mismos, ya que un selector más específico tendrá prioridad sobre uno menos específico. Por ejemplo, un selector de ID tiene más prioridad que un selector de clase, que a su vez tiene más prioridad que un selector de etiqueta.
+Además, es recomendable usar selectores específicos para evitar aplicar estilos no deseados a elementos no deseados. Por ejemplo, en lugar de usar un selector de etiqueta para cambiar el estilo de todos los elementos "p" en una página, es mejor utilizar un selector de clase o ID para cambiar solo el estilo de los elementos "p" específicos que se deseen cambiar.
+En resumen, los selectores son una herramienta esencial en CSS y su uso correcto es crucial para crear diseños atractivos y adaptativos, y para mejorar la experiencia del usuario en un sitio web.
+</p>
+            </ol>
+            <li class="encabezado">Enlaces a subsecciones más específicas dentro de esta sección.</li>
+            </li>
+        </ul>
+    </section>
+    <section class="designe" id="designe">
+        <h1>3. Sección 2: Diseño con CSS</h1>
+        <ul>
+            <li class="encabezado">Consejos y técnicas para crear diseños atractivos y adaptativos con CSS.</li>
+            <ol>
+                <p>
+                    Aquí hay algunos consejos y técnicas para crear diseños atractivos y adaptativos con CSS:
+                </p>
+                <li><p>Utilice una buena estructura de archivos: Utilice una estructura de archivos organizada y fácil de seguir para mantener su código limpio y fácil de mantener. Puede utilizar una estructura de carpetas para clasificar su código y separar su HTML, CSS y JavaScript.</p></li><li><p>Utilice un sistema de cuadrícula: Utilice un sistema de cuadrícula para crear una estructura sólida y adaptable para su diseño. Esto le permitirá crear diseños que se adapten automáticamente a diferentes tamaños de pantalla.</p></li><li><p>Utilice una tipografía legible: Utilice una tipografía legible y atractiva para mejorar la experiencia del usuario. Es importante elegir una tipografía que sea fácil de leer en diferentes tamaños y dispositivos.</p></li>
+
+            </ol>
+            <li class="encabezado">Guía de las propiedades de diseño más utilizadas, como color, tamaño y posicionamiento.</li>
+            <ol><p>
+                Propiedades de diseño más utilizadas, como color, tamaño, posicionamiento.
+            </p>
+
+            <li>Color: La propiedad "color" se utiliza para establecer el color del texto de un elemento. Puede ser especificado en varios formatos, como hexadecimal, RGB o nombre de color. Ejemplo:</li>
+            <!--Fragmento para inserción de código-->
+<div id="code-window">
+    <div id="code-header">
+      <span>CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+        color: blue;
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+</div>
+<!--Fin del Fragmento total para inserción de código aquí-->
+
+            <li>Tamaño: La propiedad "font-size" se utiliza para establecer el t</li>
+            <li>Display: La propiedad "display" se utiliza para establecer cómo se comporta un elemento en la pantalla. Puede ser especificado como "block", "inline" o "inline-block". Los elementos con display "block" ocupan todo el ancho disponible y tienen un salto de línea antes y después, mientras que los elementos con display "inline" solo ocupan el ancho necesario y no tienen salto de línea. Los elementos con display "inline-block" comparten características de ambos tipos, permiten definir un ancho y alto, pero no generan un salto de línea antes y después. Ejemplo:</li>
+            <div id="code-window">
+                <div id="code-header">
+                  <span>CSS</span>
+                  <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    <span>Copiar código</span>
+                  </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+                  <!--Comienzo introducción código entre los script-->
+                  <script>
+                    display: inline-block;
+                  </script>
+                 <!--Final de introducción de código-->
+                </code></pre>
+            </div>
+            <!--Fin del Fragmento total para inserción de código aquí-->
+            <li>Overflow: La propiedad "overflow" se utiliza para establecer cómo se manejan los contenidos que exceden el tamaño de un elemento. Puede ser especificado como "visible", "hidden", "scroll" o "auto". Ejemplo:</li>
+            <div id="code-window">
+                <div id="code-header">
+                  <span>CSS</span>
+                  <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    <span>Copiar código</span>
+                  </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+                  <!--Comienzo introducción código entre los script-->
+                  <script>
+                    overflow: scroll;
+                  </script>
+                 <!--Final de introducción de código-->
+                </code></pre>
+            </div>
+            <!--Fin del Fragmento total para inserción de código aquí-->
+
+            <li>Flexbox: La propiedad "display: flex" se utiliza para crear un contenedor flexible y ajustar los elementos hijos dentro de él. Flexbox es una herramienta muy útil para crear diseños adaptativos y responsivos. Ejemplo:</li>
+            <div id="code-window">
+                <div id="code-header">
+                  <span>CSS</span>
+                  <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    <span>Copiar código</span>
+                  </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+                  <!--Comienzo introducción código entre los script-->
+                  <script>
+                    display: flex;
+                  </script>
+                 <!--Final de introducción de código-->
+                </code></pre>
+            </div>-->
+            <!--Fin del Fragmento total para inserción de código aquí-->
+            <li>Grid: La propiedad "display: grid" se utiliza para crear una cuadrícula y organizar los elementos hijos dentro de ella. Grid es otra herramienta útil para crear diseños adaptativos y responsivos. Ejemplo:</li>
+            <div id="code-window">
+                <div id="code-header">
+                  <span>CSS</span>
+                  <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    <span>Copiar código</span>
+                  </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+                  <!--Comienzo introducción código entre los script-->
+                  <script>
+                    display: grid;
+                  </script>
+                 <!--Final de introducción de código-->
+                </code></pre>
+            </div>
+            <!--Fin del Fragmento total para inserción de código aquí-->
+            <li><p>Transformaciones: Las propiedades "transform" y "transition" permiten crear efectos de rotación, escalado y traslación en los elementos, así como transiciones suaves entre estados.</p></li><li><p>Texto: Las propiedades "text-shadow", "letter-spacing" y "word-spacing" permiten personalizar el texto, agregando sombras, espaciado entre letras y palabras.</p></li><li><p>Imágenes de fondo: Las propiedades "background" y "background-image" permiten establecer imágenes de fondo en elementos, además de controlar su posicionamiento, tamaño y repetición.</p></li><li><p>Border: Las propiedades "border" y "border-radius" permiten crear bordes con diferentes estilos, colores y tamaños, así como redondear los bordes de los elementos.</p></li>
+            <li><p>Box-shadow: Las propiedades "box-shadow" permiten crear sombras alrededor de los elementos, lo que puede proporcionar una sensación de profundidad.</p></li>
+            <li><p>Filter: Las propiedades "filter" permiten aplicar diferentes efectos visuales a los elementos, como desenfoque, saturación, brillo y contraste. Esto puede ser útil para mejorar la apariencia de imágenes o videos en una página web. Ejemplo:
+              </p>
+              </li>
+              <!--Fragmento para inserción de código-->
+              <div id="code-window">
+                <div id="code-header">
+                  <span>CSS</span>
+                  <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    <span>Copiar código</span>
+                  </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+                  <!--Comienzo introducción código entre los script-->
+                  <script>
+                    filter: brightness(150%);
+                  </script>
+                 <!--Final de introducción de código-->
+                </code></pre>
+            </div>
+            <!--Fin del Fragmento total para inserción de código aquí-->
+            <li><p>Animation: Las propiedades "animation" permiten crear animaciones personalizadas para los elementos, como movimientos, cambios de tamaño y rotación. Esto puede ser utilizado para mejorar la interacción del usuario con la página y llamar la atención sobre ciertos elementos.</p></li>
+            <li><p>Gradient: Las propiedades "linear-gradient" y "radial-gradient" permiten crear degradados en elementos, lo que puede proporcionar un efecto visual atractivo y moderno.</p></li><li><p>Opacity: La propiedad "opacity" permite definir la transparencia de un elemento. Esto es útil para crear efectos de superposición y de capas en una página web.</p></li>
+            <li><p>Grid Layout: La propiedad "grid-template" permite crear diseños de cuadrícula personalizados y organizar los elementos dentro de ellos. Esto es útil para crear diseños adaptativos y responsivos.</p></li><li><p>Flexbox Layout: La propiedad "flex" permite crear diseños flexibles y ajustar los elementos hijos dentro de ellos. Esto es útil para crear diseños adaptativos y responsivos.</p></li><li><p>Transiciones y Animaciones: Las propiedades "transition" y "animation" permiten crear efectos de transición y animación suaves en los elementos. Esto es útil para mejorar la interacción del usuario con la página y llamar la atención sobre ciertos elementos.</p></li>
+            <li><p>Variables: Las variables de CSS permiten almacenar y reutilizar valores comunes en varios lugares del código. Esto puede ayudar a reducir la cantidad de código y hacerlo más fácil de mantener.</p></li>
+            <li><p>Media Queries: Las consultas de medios permiten especificar estilos específicos para diferentes tamaños de pantalla y dispositivos. Esto es útil para crear diseños adaptativos y responsivos.</p></li>
+            <li><p>Responsive Images: La propiedad "srcset" permite especificar diferentes imágenes para diferentes tamaños de pantalla, permitiendo una carga más rápida en dispositivos móviles.</p></li>
+            <li><p>CSS Grid y Flexbox Layout son herramientas muy potentes para crear diseños adaptativos y responsivos, y son compatibles con la mayoría de los navegadores modernos.</p></li>
+            <li><p>Tamaño: La propiedad "font-size" se utiliza para establecer el tamaño de la fuente del texto de un elemento. Puede ser especificado en varias unidades, como px, em o rem.
+            La unidad "px" es una medida absoluta en pixeles, lo que significa que el tamaño de la fuente será fijo en ese número de pixeles.
+            La unidad "em" es una medida relativa al tamaño de la fuente del elemento padre. Por lo tanto, si el tamaño de la fuente del elemento padre cambia, el tamaño de la fuente del elemento hijo también cambiará en proporción.
+            La unidad "rem" es similar a "em", pero se basa en el tamaño de la fuente del elemento raíz en lugar del elemento padre.
+            Ejemplo:</p></li>
+            <!--Fragmento para inserción de código-->
+            <div id="code-window">
+              <div id="code-header">
+                <span>CSS</span>
+                <button id="copy-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                  <span>Copiar código</span>
+                </button>
+              </div>
+              <pre><code id="code-input" class="language-css">
+                <!--Comienzo introducción código entre los script-->
+                <script>
+                  font-size: 20px;
+                  font-size: 1.5em;
+                  font-size: 1.2rem;
+                </script>
+               <!--Final de introducción de código-->
+              </code></pre>
+          </div>
+          <!--Fin del Fragmento total para inserción de código aquí-->
+            <p>Es recomendable utilizar unidades relativas como "em" o "rem" para que el tamaño de la fuente sea escalable  y adaptable a diferentes tamaños de pantalla y dispositivos. Además, utilizar unidades relativas ayuda a mantener una proporción consistente entre los diferentes tamaños de fuente en el sitio web. Sin embargo, también puede ser útil utilizar unidades absolutas en algunos casos específicos, como cuando se quiere establecer un tamaño de fuente fijo para un encabezado o un botón.
+            En resumen, utilizar unidades relativas como "em" o "rem" es recomendable para lograr una escalabilidad y adaptabilidad en el tamaño de fuente, pero también debes tener en cuenta las necesidades específicas de tu diseño y uso de unidades absolutas en casos específicos.</p>
+        </ol>
+            <li class="encabezado">Ejemplos prácticos de cómo aplicar estilos a diferentes elementos y diseños.</li>
+            <li class="encabezado">Enlaces a subsecciones más específicas dentro de esta sección.</li>
+        </ul>
+    </section>
+    <section class="avanzado" id="avanzado" >
+        <h1>4. Sección 3: Avanzado</h1>
+        <ul>
+            <li class="encabezado">Temas más avanzados de programación CSS, como animaciones, transiciones y transformaciones.</li>
+            <li class="encabezado">Uso de herramientas y frameworks como Bootstrap y Foundation para facilitar el desarrollo de diseños.
+            </li>
+            <li class="encabezado">Guía de las mejores prácticas para optimizar el rendimiento y la velocidad de carga de sitios web con
+                CSS.</li>
+            <li class="encabezado">Enlaces a subsecciones más específicas dentro de esta sección.</li>
+        </ul>
+    </section>
+    <section class="recursos" id="recursos">
+        <h1>5. Sección 4: Ejemplos y Recursos</h1>
+        <ul>
+            <li class="encabezado">Recopilación de ejemplos prácticos de código CSS y diseños.</li>
+            <li class="encabezado">Enlaces a recursos adicionales, como tutoriales, cursos y herramientas relacionadas con programación
+                CSS.</li>
+        </ul>
+    </section>
+</main>
+<footer>
+  <p>&copy; 2023 EDF Tutoriales de Programación</p>
+</footer>
+<script>
+  // Obtener el elemento con el id "parrafo"
+let paragraph = document.getElementById("parrafo");
+
+// Obtener el texto del párrafo
+let text = paragraph.innerText;
+
+// Dividir el texto en un arreglo de palabras
+let words = text.split(" ");
+
+// Inicializar una variable para almacenar el texto acortado
+let shortenedText = "";
+
+// Inicializar una variable para contar el número de caracteres
+let characterCount = 0;
+
+// Recorrer cada palabra del arreglo
+for (let i = 0; i < words.length; i++) {
+    // Añadir la palabra al texto acortado
+    shortenedText += words[i] + " ";
+    // Aumentar el contador de caracteres
+    characterCount += words[i].length + 1;
+    if (characterCount >= 100) {
+        // Si se ha alcanzado el límite de caracteres, agregar un salto de línea y resetear el contador
+        shortenedText += "\n";
+        characterCount = 0;
+    }
+}
+// Establecer el texto acortado en el elemento "parrafo"
+paragraph.innerText = shortenedText;
+
+const copyBtn = document.getElementById("copy-btn");
+const codeInput = document.getElementById("code-input");
+
+copyBtn.addEventListener("click", () => {
+  const codeInputValue = codeInput.innerText;
+  navigator.clipboard.writeText(codeInputValue);
+});
+const codeWindow = document.getElementById("code-window");
+
+
+// Function to adjust the height of code-window to the height of code-input
+function adjustCodeWindowHeight() {
+  codeWindow.style.height = `${codeInput.offsetHeight + 50}px`;
+}
+
+// Call the function on load and on any changes to the code-input
+window.addEventListener("load", adjustCodeWindowHeight);
+codeInput.addEventListener("input", adjustCodeWindowHeight);
+const scrollUpArrow = document.querySelector('#scroll-up-arrow');
+
+scrollUpArrow.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 300) {
+    scrollUpArrow.style.display = 'flex';
+  } else {
+    scrollUpArrow.style.display = 'none';
+  }
+});
+</script>
+</body>
+<!--<script src="./main.js"></script>
+<script src="./___Fragmento_Codigo_Final/fragmentoCodigo.js"></script>-->
+
+</html>

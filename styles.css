@@ -1,0 +1,95 @@
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  li {
+    text-align: justify;
+    /*justificar el texto*/
+    hyphens: auto;
+    /*activar el corte de palabras*/
+    word-wrap: break-word;
+    /*romper las palabras para ajustarlas al ancho*/
+    max-width: 700px;
+    /*definir un ancho máximo para cada línea*/
+}
+p{
+    text-align: justify;
+    /*justificar el texto*/
+    hyphens: auto;
+    /*activar el corte de palabras*/
+    word-wrap: break-word;
+    /*romper las palabras para ajustarlas al ancho*/
+    max-width: 800px;
+    /*definir un ancho máximo para cada línea*/
+}
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+nav ul {
+    list-style-type: none; /* eliminar los puntos de la lista */
+    margin: 0; /* eliminar los márgenes predeterminados */
+    padding: 0; /* eliminar los espacios predeterminados */
+    overflow: hidden; /* ocultar los elementos que sobrepasen el área del menú */
+  }
+  
+  nav li {
+    float: left; /* hacer que los elementos de la lista se alineen en línea */
+  }
+  
+  nav a {
+    display: block; /* hacer que los enlaces ocupen todo el ancho de su elemento padre */
+    margin-left: 70px;
+    padding: 14px 16px; /* añadir espacios alrededor del texto del enlace */
+    text-decoration: none; /* eliminar la decoración predeterminada del enlace */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px; /* establecer un tamaño de fuente para el texto del enlace */
+    font-weight: 600;
+    color: #000; /* establecer un color para el texto del enlace */
+    
+  }
+  
+
+.encabezado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* establecer un tamaño de fuente para el texto del enlace */
+    color: #000; /* establecer un color para el texto del enlace */
+    font-weight: 500;
+}
+#scroll-up-arrow {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#scroll-up-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-10px);
+}
+
+#scroll-up-arrow::before {
+  content: "\2191";
+  font-size: 2em;
+}

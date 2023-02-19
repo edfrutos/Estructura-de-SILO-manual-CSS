@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Fragmento Código</title>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js"></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./fragmentoCodigo.css">
+</head>
+<body>
+  <!--Código para crea funcionalidad de introducir fragmento de código-->
+  <div id="code-window">
+    <div id="code-header">
+      <span>css</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+        <div id="code-window">
+          <div id="code-header">
+            <span>Code Input</span>
+            <button id="copy-btn">Copy</button>
+          </div>
+          <pre><code id="code-input" class="language-markup"></code></pre>
+        </div>
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+  </div>
+  <!--Final funcionalidad para introducir fragmento de código-->
+  </body>
+<script src="./fragmentoCodigo.js"></script>
+</html>
+
